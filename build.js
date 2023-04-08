@@ -13,6 +13,9 @@ fs.readFile(inputFile, 'utf8', (err, data) => {
     process.exit(1);
   }
 
+  // esbuild changes the "\n" to into a newline character in template literal.
+  // see: https://esbuild.github.io/faq/#minified-newlines
+  // so we need to encode it to use it in a bookmarklet.
   const encodedData = encodeURIComponent(data);
 
   fs.writeFile(outputFile, head + encodedData + tail, 'utf8', (err) => {
