@@ -4,7 +4,7 @@ Convert Kindle highlights to Scrapbox.
 
 ## Build bookmarklet
 
-1. Edit `src/bookmarklet.js` and set your Scrapbox user name.
+1. Edit `src/index.ts` and set your Scrapbox user name.
 2. Run build script.
 
    ```bash
