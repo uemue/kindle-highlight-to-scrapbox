@@ -5,7 +5,7 @@ import { ParseResult } from 'kindle-highlight-to-markdown/lib/parse';
   // replace your_user_name to your Scrapbox user name
   const userName = 'your_user_name';
   // replace kindleProxy to your kindle proxy url. (e.g. https://xxx.workers.dev/)
-  const kindleProxy = '';
+  const kindleProxy: string = '';
 
   function convertToScrapbox(parseResult: ParseResult): string {
     const { title, url, coverImageUrl, annotations } = parseResult;
