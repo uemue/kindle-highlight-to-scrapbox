@@ -36,7 +36,7 @@ import { ParseResult } from 'kindle-highlight-to-markdown/lib/parse';
     try {
       await navigator.clipboard.writeText(text);
     } catch (err) {
-      console.error('クリップボードへのコピーに失敗しました。', err);
+      console.error('Failed to copy: ', err);
     }
   }
 
@@ -44,5 +44,5 @@ import { ParseResult } from 'kindle-highlight-to-markdown/lib/parse';
   const scrapboxText = convertToScrapbox(parseResult);
   await copyToClipboard(scrapboxText);
 
-  alert('ハイライトがScrapbox形式でコピーされました！');
+  alert('Copied to clipboard!');
 })();
