@@ -20,9 +20,9 @@ Convert Kindle highlights to Scrapbox.
 
 ## Kindle Proxy
 
-Kindle Proxy is a proxy server that redirects to the Kindle app. Since Scrapbox does not allow `kindle://` links, you need to use Kindle Proxy to utilize the link.
+Kindle Proxy is a proxy server that redirects `https://...` URLs to `kindle://...` protocol, which opens the Kindle app. Since Scrapbox does not support `kindle://` links, you need to use Kindle Proxy to make use of these links.
 
-If you set Kindle Proxy URL to `kindleProxy` in `src/index.ts`, the bookmarklet will add a link to the specific location number within the Kindle app.
+By setting the Kindle Proxy URL to `kindleProxy` in `src/index.ts`, the bookmarklet will add a link to a specific location number within the Kindle app.
 
 Please note that this feature does not work on iOS, as the Kindle iOS app does not support it.
 
